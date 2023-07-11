@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-background: #202022;
+    --font-color: #CACACA;
+    --primary-color: #00BBC9;
+    --secundary-color: #00747C;
+    --black-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    background-position: center;
+    background-size: contain;
+}
+
+.wrapper {
+    /* position: relative; */
+    width: 550px;
+    height: 700px;
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.wrapper img {
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+}
+
+.wrapper h3 {
+    color: var(--font-color);
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.wrapper p {
+    color: var(--font-color);
+    margin-top: .7rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    margin-top: 1rem;
+    /* background-color: seagreen; */
+}
+
+.icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.icon a:hover {
+    border-color: var(--primary-color);
+}
+
+.icon a i {
+    font-size: 24px;
+    color: var(--primary-color);
+    transform: rotate(-45deg);
+}
+
+.switch {
+    margin-top: 1rem;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.switch input {
+    appearance: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, .5);
+    outline: none;
+}
+
+.switch input::before,
+.switch input::after {
+    z-index: 2;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    font-weight: bolder;
+}
+
+.switch input::before {
+    content: 'SKILLS';
+    left: 20px;
+}
+
+.switch input::after {
+    content: 'PROJECTS';
+    right: 20px;
+}
+
+.switch input:checked {
+    background: var(--primary-color);
+}
+
+.switch label {
+    z-index: 1;
+    position: absolute;
+    top: 6px;
+    bottom: 4px;
+    border-radius: 20px;
+}
+
+.switch input {
+    transition: .25s;
+}
+
+.switch input:checked::after,
+.switch input:checked::before {
+    color: var(--font-color);
+    transition: color .5s;
+}
+
+.switch input:checked+label {
+    left: 10px;
+    right: 125px;
+    background: #1e1e1e;
+    transition: left.5s, right .4s .2s;
+}
+
+.switch input:not(:checked) {
+    background: #1e1e1e;
+    transition: background .4s;
+}
+
+.switch input:not(:checked)::before {
+    color: var(--font-color);
+    transition: color .5s;
+}
+
+.switch input:not(:checked)::after {
+    color: #1e1e1e;
+    transition: color .5s .2s;
+}
+
+.switch input:not(:checked) +label {
+    left: 100px;
+    right: 10px;
+    background: var(--primary-color);
+    transition: left .4s .2s, right .5s, background .35s;
+}
+
+.lang {
+    width: 100%;
+    height: 500px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    grid-template-rows: 100px 100px 100px;
+    /* gap: 5px; */
+    row-gap: 3px;
+    column-gap: 3px;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .lang div {
+    text-align: center;
+    width: 100;
+    height: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    /* background: #878787; */
+   }
+
+   .lang div h4 {
+    margin-top: .5rem;
+    color: var(--primary-color);
+    font-size: .8rem;
+   }
+
+   .lang div i {
+    font-size: 1.25rem;
+    color: var(--font-color);
+    margin-top: 1rem;
+   }
+
+   .lang div p {
+    font-size: .6rem;
+    color: var(--primary-color);
+   }
