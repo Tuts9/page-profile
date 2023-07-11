@@ -120,12 +120,12 @@ body {
 }
 
 .switch input::before {
-    content: 'SKILLS';
+    content: 'PROJECTS';
     left: 20px;
 }
 
 .switch input::after {
-    content: 'PROJECTS';
+    content: 'SKILLS';
     right: 20px;
 }
 
@@ -153,7 +153,7 @@ body {
 
 .switch input:checked+label {
     left: 10px;
-    right: 125px;
+    right: 100px;
     background: #1e1e1e;
     transition: left.5s, right .4s .2s;
 }
@@ -174,7 +174,7 @@ body {
 }
 
 .switch input:not(:checked) +label {
-    left: 100px;
+    left: 125px;
     right: 10px;
     background: var(--primary-color);
     transition: left .4s .2s, right .5s, background .35s;
