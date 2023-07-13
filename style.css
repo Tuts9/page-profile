@@ -255,11 +255,11 @@ body {
    .project3,
    .project4 {
     /* text-align: center; */
-    border: 2px solid var(--font-color);
+    border: 2px solid var(--primary-color);
     border-radius: 5px;
     width: 100%;
     height: 100%;
-    /* background: transparent; */
+    filter: drop-shadow(0 0 10px rgba(0, 187, 201, .4));
    }
 
    .projects .project1 {
@@ -290,7 +290,6 @@ body {
     text-align: center;
     height: 40px;
     margin-bottom: 1.5rem;
-    /* background: var(--black-color); */
    }
 
    .project1 a,
@@ -303,7 +302,7 @@ body {
    .projects .title h3 {
     font-size: .9rem;
     color: var(--font-color);
-    background-color: rgba(255, 255, 255, .28);
+    background-color: rgba(0, 187, 201, .28);
     margin-top: 0;
     padding-top: 5px;
     height: 30px;
@@ -320,7 +319,6 @@ body {
     list-style: none;
     font-size: .7rem;
     font-weight: 600;
-    /* background-color: rgba(255, 255, 255, .05); */
    }
 
    .footer p {
@@ -366,3 +364,50 @@ body {
       opacity: 1;
     }
   }
+
+  /* MEDIA QUERYS */
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+        height: 1150px;
+    }
+    
+    .lang {
+        width: 100%;
+        height: 600px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 160px 160px;
+        grid-template-rows: 150px 150px 150px 150px;
+        row-gap: 3px;
+        column-gap: 3px;
+        align-items: center;justify-content: center;
+    }
+
+    .lang > .java {
+        margin-left: 5rem;
+    }
+
+    .projects {
+        width: 92%;
+        height: 800px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 180px 180px 180px 180px;
+    }
+
+    .project1,
+    .project3 {
+        margin-left: 10rem;
+    }
+
+    .project2,
+    .project4 {
+        margin-left: 3rem;
+    }
+    
+  }
+
