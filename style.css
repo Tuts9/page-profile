@@ -398,17 +398,29 @@ body {
         display: grid;
         grid-template-columns: 300px;
         grid-template-rows: 180px 180px 180px 180px;
+        align-items: center;
     }
 
     .project1,
     .project3 {
-        margin-left: 10rem;
+        margin-left: 18rem;
+    }
+
+    .project2,
+    .project4 {
+        margin-left: 4.5rem;
+    }
+    
+  }
+
+  @media screen and (max-width: 430px) {
+    .project1,
+    .project3 {
+        margin-left: 1rem;
     }
 
     .project2,
     .project4 {
         margin-left: 3rem;
     }
-    
   }
-
