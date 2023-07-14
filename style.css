@@ -159,7 +159,7 @@ body {
 
 .switch input:checked+label {
     top: 5px;
-    left: 4px;
+    left: 7px;
     right: 100px;
     background: #1e1e1e;
     transition: left.5s, right .4s .2s;
