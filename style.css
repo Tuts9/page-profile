@@ -278,6 +278,7 @@ body {
     background: url(SSP.png);
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -1;
    }
 
    .projects .project4 {
