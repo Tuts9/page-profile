@@ -263,25 +263,25 @@ body {
    }
 
    .projects .project1 {
-    background: url(calc-groj.png);
+    background: url(assets/img/calc-groj.png);
     background-size: cover;
     background-repeat: no-repeat;
    }
 
    .projects .project2 {
-    background: url(website-log.png);
+    background: url(assets/img/website-log.png);
     background-size: cover;
     background-repeat: no-repeat;
    }
 
    .projects .project3 {
-    background: url(tarefa-cod.png);
+    background: url(assets/img/tarefa-cod.png);
     background-size: cover;
     background-repeat: no-repeat;
    }
 
    .projects .project4 {
-    background: url(tarefa-cod.png);
+    background: url(assets/img/tarefa-cod.png);
     background-size: cover;
     background-repeat: no-repeat;
    }
